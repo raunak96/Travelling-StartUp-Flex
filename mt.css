@@ -5,16 +5,16 @@
   box-sizing:border-box;
 }
 html{
-  font: normal 16px sans-serif;
-  color: #555;
+	font: normal 16px sans-serif;
+	color: #555;
 }
 a.btn{
-  border-radius: 4px;
-  text-transform: uppercase;
-  font-weight: bold;
-  text-align: center;
-  background-color: #3f51b5;
-  opacity: 1;
+	border-radius: 4px;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: center;
+	background-color: #3f51b5;
+	opacity: 1;
 }
 section{
     display:flex;
@@ -29,7 +29,7 @@ section{
   }
 }
 section:not(.hero):nth-child(even){
-  background-color: #f5f5f5;      /*sections' bg color changes alternatively*/
+	background-color: #f5f5f5;      /*sections' bg color changes alternatively*/
 }
 
 hr{
@@ -41,8 +41,8 @@ hr{
 }
 
 a{
-  text-decoration: none;
-  opacity:0.75;
+	text-decoration: none;
+	opacity:0.75;
   color:#fff;
 }
 a:hover{
@@ -51,8 +51,8 @@ a:hover{
 section h3.title{
   text-transform:capitalize;
   font: bold 32px "Open Sans", sans-serif;
-  margin-bottom: 30px;
-  text-align: center;
+	margin-bottom: 30px;
+	text-align: center;
 }
 section p{
   max-width:775px;
@@ -75,7 +75,7 @@ header{
   animation:1s fadein 0.5s ease-in forwards;
 }
 header h2{
-  font-family: "Quicksand", sans-serif;
+	font-family: "Quicksand", sans-serif;
 }
 @media (max-width:800px)
 {
@@ -88,7 +88,7 @@ header h2{
   }
 }
 ul,nav{
-  list-style: none;
+	list-style: none;
 }
 @keyframes fadein{
   100%{
@@ -113,25 +113,25 @@ nav li{
 }
 
 .hero .background-image{
-  position: absolute;
-  top:0;
-  left:0;
-  height:100%;
-  width:100%;
-  z-index: -1;
-  background-size: cover;
-  background-color: #80a3db;
+	position: absolute;
+	top:0;
+	left:0;
+	height:100%;
+	width:100%;
+	z-index: -1;
+	background-size: cover;
+	background-color: #80a3db;
 }
 .hero h1{
-  font: bold 60px "Open Sans", sans-serif;
-  margin-bottom: 15px;
+	font: bold 60px "Open Sans", sans-serif;
+	margin-bottom: 15px;
 }
 .hero h3{
-  font: normal 28px "Open Sans", sans-serif;
-  margin-bottom: 40px;
+	font: normal 28px "Open Sans", sans-serif;
+	margin-bottom: 40px;
 }
 .hero a.btn{
-  padding: 20px 46px;
+	padding: 20px 46px;
 }
 .hero-content-area{
   opacity:0;
@@ -156,16 +156,16 @@ nav li{
     font-size:24px;
   }
   .hero a.btn{
-  padding: 15px 40px;
+	padding: 15px 40px;
 }
 }
 
 /* Destinations Section */
 .grid{
-  width:100%;
-  display:flex;
-  justify-content: center;
-  flex-wrap: wrap;
+	width:100%;
+	display:flex;
+	justify-content: center;
+	flex-wrap: wrap;
 }
 /* Destination Bg img */
 .destinations .grid li{
@@ -182,16 +182,16 @@ nav li{
   flex-basis:30%;
 }
 @media (max-width: 1100px){
-  .destinations .grid li.small,
-  .destinations .grid li.large{
-    flex-basis: 50%;
-  }
+	.destinations .grid li.small,
+	.destinations .grid li.large{
+		flex-basis: 50%;
+	}
 }
 @media (max-width: 800px){
-  .destinations .grid li.small,
-  .destinations .grid li.large{
-    flex-basis: 100%;
-  }
+	.destinations .grid li.small,
+	.destinations .grid li.large{
+		flex-basis: 100%;
+	}
 }
 
 /* PACKAGES SECTION */
@@ -202,11 +202,11 @@ nav li{
   text-align:center;
 }
 .packages .grid i{
-  color: #8c9eff;
+	color: #8c9eff;
 }
 .packages .grid li h4{
-  font-size: 30px;
-  margin: 25px 0;
+	font-size: 30px;
+	margin: 25px 0;
 }
 @media (max-width:800px)
 {
@@ -223,13 +223,13 @@ nav li{
   margin:40px 0 25px;
 }
 @media (max-width: 800px){
-  .testimonials .quote{
-    font-size: 18px;
-    margin: 11px 0;
-  }
-  .testimonials .author{
-    font-size: 15px;
-  }
+	.testimonials .quote{
+		font-size: 18px;
+		margin: 11px 0;
+	}
+	.testimonials .author{
+		font-size: 15px;
+	}
 }
 
 /* Contact Section */
@@ -253,6 +253,9 @@ nav li{
 
 @media (max-width:1018px)
 {
+  .contact{
+    margin-bottom:70px;
+  }
   .contact form input{
     flex-basis:100%;
     margin:0 0 20px 0;
