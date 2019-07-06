@@ -5,19 +5,19 @@
   box-sizing:border-box;
 }
 html{
-	font: normal 16px sans-serif;
-	color: #555;
+  font: normal 16px sans-serif;
+  color: #555;
 }
 a.btn{
-	border-radius: 4px;
-	text-transform: uppercase;
-	font-weight: bold;
-	text-align: center;
-	background-color: #3f51b5;
-	opacity: 1;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  background-color: #3f51b5;
+  opacity: 1;
 }
 section{
-    display:flex;
+    display:flex;                       /*All Sections are column flex and horizontally centered*/
     flex-direction: column;
     align-items: center;
     padding: 100px 80px;
@@ -29,7 +29,7 @@ section{
   }
 }
 section:not(.hero):nth-child(even){
-	background-color: #f5f5f5;      /*sections' bg color changes alternatively*/
+  background-color: #f5f5f5;      /*sections' bg color changes alternatively*/
 }
 
 hr{
@@ -41,8 +41,8 @@ hr{
 }
 
 a{
-	text-decoration: none;
-	opacity:0.75;
+  text-decoration: none;
+  opacity:0.55;
   color:#fff;
 }
 a:hover{
@@ -51,8 +51,8 @@ a:hover{
 section h3.title{
   text-transform:capitalize;
   font: bold 32px "Open Sans", sans-serif;
-	margin-bottom: 30px;
-	text-align: center;
+  margin-bottom: 30px;
+  text-align: center;
 }
 section p{
   max-width:775px;
@@ -61,6 +61,7 @@ section p{
   margin-bottom:30px;
   text-align:center;
 }
+/*=====================================================================================*/
 
 /* Header Styles */
 header{
@@ -75,7 +76,7 @@ header{
   animation:1s fadein 0.5s ease-in forwards;
 }
 header h2{
-	font-family: "Quicksand", sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 @media (max-width:800px)
 {
@@ -88,7 +89,7 @@ header h2{
   }
 }
 ul,nav{
-	list-style: none;
+  list-style: none;
 }
 @keyframes fadein{
   100%{
@@ -103,35 +104,50 @@ nav{
 nav li{
   margin:0 14px;
 }
+/*======================================================*/
+
 /* 1st page Section */
 .hero{
-  position:relative;
+  position:relative;        /*gets flex prop from section applied in general styles*/
   justify-content:center;
   text-align:center;
   min-height:100vh;
   color:#fff;
+  overflow:visible
 }
 
 .hero .background-image{
-	position: absolute;
-	top:0;
-	left:0;
-	height:100%;
-	width:100%;
-	z-index: -1;
-	background-size: cover;
-	background-color: #80a3db;
+  position: absolute;
+  top:0;
+  left:-40px;
+  height:100%;
+  width:115%;
+  z-index: -1;
+  background-image: url(https://onehdwallpaper.com/wp-content/uploads/2015/07/Mountain-Wallpapers-Sunset-HD.jpg);
+  background-size: cover;
+  background-color: #80a3db;
+  background-position: -40px center;
+  background-repeat: no-repeat;
+  animation:5s mov 1s ease-in-out infinite alternate;
+}
+@keyframes mov{
+  0%{
+    transform:translate(-40px,0);
+  }
+  100%{
+    transform:translate(10px,0);
+  }
 }
 .hero h1{
-	font: bold 60px "Open Sans", sans-serif;
-	margin-bottom: 15px;
+  font: bold 60px "Open Sans", sans-serif;
+  margin-bottom: 15px;
 }
 .hero h3{
-	font: normal 28px "Open Sans", sans-serif;
-	margin-bottom: 40px;
+  font: normal 28px "Open Sans", sans-serif;
+  margin-bottom: 40px;
 }
 .hero a.btn{
-	padding: 20px 46px;
+  padding: 20px 46px;
 }
 .hero-content-area{
   opacity:0;
@@ -156,16 +172,17 @@ nav li{
     font-size:24px;
   }
   .hero a.btn{
-	padding: 15px 40px;
+  padding: 15px 40px;
 }
 }
 
 /* Destinations Section */
+
 .grid{
-	width:100%;
-	display:flex;
-	justify-content: center;
-	flex-wrap: wrap;
+  width:100%;
+  display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 /* Destination Bg img */
 .destinations .grid li{
@@ -176,22 +193,22 @@ nav li{
   background-clip:content-box; /*clips bg to only till content not till padding or border*/
 }
 .destinations .grid li.large{
-  flex-basis:70%;
+  flex-basis:60%;
 }
 .destinations .grid li.small{
-  flex-basis:30%;
+  flex-basis:40%;
 }
 @media (max-width: 1100px){
-	.destinations .grid li.small,
-	.destinations .grid li.large{
-		flex-basis: 50%;
-	}
+  .destinations .grid li.small,
+  .destinations .grid li.large{
+    flex-basis: 50%;
+  }
 }
 @media (max-width: 800px){
-	.destinations .grid li.small,
-	.destinations .grid li.large{
-		flex-basis: 100%;
-	}
+  .destinations .grid li.small,
+  .destinations .grid li.large{
+    flex-basis: 100%;
+  }
 }
 
 /* PACKAGES SECTION */
@@ -202,11 +219,11 @@ nav li{
   text-align:center;
 }
 .packages .grid i{
-	color: #8c9eff;
+  color: #8c9eff;
 }
 .packages .grid li h4{
-	font-size: 30px;
-	margin: 25px 0;
+  font-size: 30px;
+  margin: 25px 0;
 }
 @media (max-width:800px)
 {
@@ -223,13 +240,13 @@ nav li{
   margin:40px 0 25px;
 }
 @media (max-width: 800px){
-	.testimonials .quote{
-		font-size: 18px;
-		margin: 11px 0;
-	}
-	.testimonials .author{
-		font-size: 15px;
-	}
+  .testimonials .quote{
+    font-size: 18px;
+    margin: 11px 0;
+  }
+  .testimonials .author{
+    font-size: 15px;
+  }
 }
 
 /* Contact Section */
@@ -289,13 +306,13 @@ footer p{
 @media (max-width:1018px){
   footer{
     flex-direction:column;
-    padding:12px 0;
+    padding:8px 0;
   }
   footer p{
     text-align:center;
-    margin-bottom:8px;
+    margin-bottom:4px;
   }
   footer ul li{
-    margin:0 8px;
+    margin:0 4px;
   }
 }
